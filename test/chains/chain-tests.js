@@ -1091,7 +1091,6 @@ describe("Test Supported Chains", function () {
     "shared/withImmutables.metadata.json"
   );
 
-
   // Gnosis Chiado Testnet
   verifyContractWithImmutables(
     "0x78f71adAf9601034faC12C80F316ce4c2E95D1ab",
@@ -1138,7 +1137,6 @@ describe("Test Supported Chains", function () {
     ["shared/WithImmutables.sol"],
     "shared/withImmutables.metadata.json"
   );
-
 
   // Shiden (EVM)
   verifyContract(
@@ -1230,6 +1228,24 @@ describe("Test Supported Chains", function () {
     "shared/withImmutables.metadata.json"
   );
 
+  // Songbird Canary Network
+  verifyContract(
+    "0x024829b4A91fB78437A854380c89A3fFc966c2D1",
+    "19",
+    "Songbird Canary Network",
+    ["shared/1_Storage.sol"],
+    "shared/1_Storage.metadata.json"
+  );
+  verifyContractWithImmutables(
+    "0x5Ae4d53004Fd1C1E0C037998E9644fFB0f9A87a9",
+    "19",
+    "Songbird Canary Network",
+    ["uint256"],
+    [123],
+    ["shared/WithImmutables.sol"],
+    "shared/withImmutables.metadata.json"
+  );
+
   // Flare Mainnet
   verifyContract(
     "0xbBc2EdeDc9d2d97970eE20d0Dc7216216a27e635",
@@ -1244,6 +1260,96 @@ describe("Test Supported Chains", function () {
     "Flare Mainnet",
     ["uint256"],
     [123],
+    ["shared/WithImmutables.sol"],
+    "shared/withImmutables.metadata.json"
+  );
+
+  // Oasis Sapphire Mainnet
+  verifyContract(
+    "0xFBcb580DD6D64fbF7caF57FB0439502412324179",
+    "23294",
+    "Oasis Sapphire",
+    ["shared/1_Storage.sol"],
+    "shared/1_Storage.metadata.json"
+  );
+  verifyContractWithImmutables(
+    "0xA0FB05d6Ce497beb162C4EbA4F203544B18A3f31",
+    "23294",
+    "Oasis Sapphire",
+    ["uint256"],
+    [1234],
+    ["shared/WithImmutables.sol"],
+    "shared/withImmutables.metadata.json"
+  );
+
+  // Oasis Sapphire Testnet
+  verifyContract(
+    "0xFBcb580DD6D64fbF7caF57FB0439502412324179",
+    "23295",
+    "Oasis Sapphire Testnet",
+    ["shared/1_Storage.sol"],
+    "shared/1_Storage.metadata.json"
+  );
+  verifyContractWithImmutables(
+    "0x5a1C04012bc233c898aebb8BB4353F80D96f3dD2",
+    "23295",
+    "Oasis Sapphire Testnet",
+    ["uint256"],
+    [123],
+    ["shared/WithImmutables.sol"],
+    "shared/withImmutables.metadata.json"
+  );
+
+  // Stratos Testnet
+  verifyContract(
+    "0x9082db5F71534984DEAC8E4ed66cFe364d77dd36",
+    "2047",
+    "Stratos Testnet",
+    ["shared/1_Storage.sol"],
+    "shared/1_Storage.metadata.json"
+  );
+  verifyContractWithImmutables(
+    "0xA049F14E503A489E6f72603034CBe4d6835C8393",
+    "2047",
+    "Stratos Testnet",
+    ["uint256"],
+    [101],
+    ["shared/WithImmutables.sol"],
+    "shared/withImmutables.metadata.json"
+  );
+
+  // Bear Network Chain Mainnet
+  verifyContract(
+    "0x0f103813fa15CA19b6C4B46a0Afe99440b81d7C3",
+    "641230",
+    "Bear Network Chain Mainnet",
+    ["shared/1_Storage.sol"],
+    "shared/1_Storage.metadata.json"
+  );
+  verifyContractWithImmutables(
+    "0x799994F76396F1bCF6E8A55B50D02072D32Cc70D",
+    "641230",
+    "Bear Network Chain Mainnet",
+    ["uint256"],
+    [641230],
+    ["shared/WithImmutables.sol"],
+    "shared/withImmutables.metadata.json"
+  );
+
+  // Base Goerli Testnet
+  verifyContract(
+    "0x8F78b9c92a68DdF719849a40702cFBfa4EB60dD0",
+    "84531",
+    "Base Goerli Testnet",
+    ["shared/1_Storage.sol"],
+    "shared/1_Storage.metadata.json"
+  );
+  verifyContractWithImmutables(
+    "0xd46fd24ea21F04459407Fb0B518451e54d0b07a1",
+    "84531",
+    "Base Goerli Testnet",
+    ["uint256"],
+    [12345],
     ["shared/WithImmutables.sol"],
     "shared/withImmutables.metadata.json"
   );
